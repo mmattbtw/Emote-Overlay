@@ -238,7 +238,7 @@ function streakEvent() {
         $("#main").empty();
         $("#main").css("position", "absolute");
         $("#main").css("top", "600");
-        $("#main").css("left", "35");
+        $("#main").css("right", "35");
         var img = $("<img />", { src: currentStreak.emoteURL });
         img.appendTo("#main");
         var streakLength = $("#main").append(" 󠀀  󠀀  x" + currentStreak.streak + " " + emoteStreakText);
@@ -316,7 +316,7 @@ function showEmoteEvent(emote) {
             var xy = getRandomCoords();
             $("#showEmote").css("position", "absolute");
             $("#showEmote").css("top", xy[1] + "px");
-            $("#showEmote").css("left", xy[0] + "px");
+            $("#showEmote").css("right", xy[0] + "px");
             log("creating showEmote");
             var img = $("<img />", { src: image, style: `transform: scale(${showEmoteSizeMultiplier}, ${showEmoteSizeMultiplier})` });
             img.appendTo("#showEmote");
